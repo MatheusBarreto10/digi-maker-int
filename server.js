@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 4000;
 app.use(bodyParser.json());
 
 // Endpoint para receber mensagens do Digisac
-app.post('/webhook', async (req, res) => {
+app.post('https://digi-maker-int.onrender.com/webhook', async (req, res) => {
     try {
         const mensagem = req.body.mensagem;
 
